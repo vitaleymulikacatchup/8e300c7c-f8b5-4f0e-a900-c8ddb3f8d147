@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -10,7 +10,7 @@ import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCar
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import { BarChart3, Building, Calendar, DollarSign, Globe, HelpCircle, MessageSquare, Settings, Tower, TrendingUp, Users } from "lucide-react";
+import { BarChart3, Building, Calendar, DollarSign, Globe, HelpCircle, MessageSquare, Settings, TrendingUp, Users } from "lucide-react";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
           title="Strategic Cell Site Lease Investment"
           description="Maximize your property's potential with AP Wireless. We provide upfront lump-sum payments for cell tower lease rights across 23 countries worldwide."
           tag="Industry Leader"
-          tagIcon={Tower}
+          tagIcon={Building}
           buttons={[
             {
               text: "Get Your Quote",
