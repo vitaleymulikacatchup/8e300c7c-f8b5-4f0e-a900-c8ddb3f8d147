@@ -1,6 +1,5 @@
-"use client";
+"use client"
 
-import { BarChart3, Building, Calendar, DollarSign, Globe, HelpCircle, MessageSquare, Settings, TrendingUp, Users } from "lucide-react";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
@@ -11,8 +10,9 @@ import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCar
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import { BarChart3, Building, Calendar, DollarSign, Globe, HelpCircle, MessageSquare, Settings, Tower, TrendingUp, Users } from "lucide-react";
 
-export default function Page() {
+export default function Home() {
   return (
     <ThemeProvider
       defaultButtonVariant="text-stagger"
@@ -41,13 +41,19 @@ export default function Page() {
           title="Strategic Cell Site Lease Investment"
           description="Maximize your property's potential with AP Wireless. We provide upfront lump-sum payments for cell tower lease rights across 23 countries worldwide."
           tag="Industry Leader"
-          tagIcon={TrendingUp}
+          tagIcon={Tower}
           buttons={[
-            { text: "Get Your Quote", href: "contact" },
-            { text: "Learn More", href: "about" }
+            {
+              text: "Get Your Quote",
+              href: "contact"
+            },
+            {
+              text: "Learn More",
+              href: "about"
+            }
           ]}
           imageSrc="https://images.pexels.com/photos/17324301/pexels-photo-17324301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="View of a tall telecom tower set against a clear blue sky in Depok, Indonesia."
+          imageAlt="Cell phone tower communication infrastructure"
         />
       </div>
 
@@ -59,12 +65,15 @@ export default function Page() {
             "Our business develops partnerships with existing cell tower landlords, providing them with a lump-sum payment in exchange for the right to receive future rents associated with cell sites on their property."
           ]}
           buttons={[
-            { text: "Our Services", href: "services" }
+            {
+              text: "Our Services",
+              href: "services"
+            }
           ]}
         />
       </div>
 
-      <div id="services" data-section="services">
+      <div id="services" data-section="services" className="bg-background">
         <FeatureCardTwo
           title="What We Do"
           description="Comprehensive cell site lease solutions across multiple property types and markets worldwide"
@@ -221,10 +230,30 @@ export default function Page() {
           title="Get Your Property Evaluation"
           description="Contact our experts today for a comprehensive assessment of your cell site lease value and potential buyout options."
           inputs={[
-            { name: "name", type: "text", placeholder: "Full Name", required: true },
-            { name: "email", type: "email", placeholder: "Email Address", required: true },
-            { name: "phone", type: "tel", placeholder: "Phone Number", required: true },
-            { name: "property", type: "text", placeholder: "Property Address", required: true }
+            {
+              name: "name",
+              type: "text",
+              placeholder: "Full Name",
+              required: true
+            },
+            {
+              name: "email",
+              type: "email",
+              placeholder: "Email Address",
+              required: true
+            },
+            {
+              name: "phone",
+              type: "tel",
+              placeholder: "Phone Number",
+              required: true
+            },
+            {
+              name: "property",
+              type: "text",
+              placeholder: "Property Address",
+              required: true
+            }
           ]}
           textarea={{
             name: "message",
@@ -234,7 +263,7 @@ export default function Page() {
           }}
           buttonText="Request Evaluation"
           imageSrc="https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Close-up of a handshake between two professionals in a modern office setting, emphasizing partnership and agreement."
+          imageAlt="Business consultation meeting"
         />
       </div>
     </ThemeProvider>
