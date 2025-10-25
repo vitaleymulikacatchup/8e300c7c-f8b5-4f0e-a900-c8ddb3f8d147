@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { BarChart3, Building, Calendar, DollarSign, Globe, HelpCircle, MessageSquare, Settings, Tower, TrendingUp, Users } from "lucide-react";
+import { BarChart3, Building, Calendar, DollarSign, Globe, HelpCircle, MessageSquare, Settings, TrendingUp, Users } from "lucide-react";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
@@ -41,13 +41,13 @@ export default function Page() {
           title="Strategic Cell Site Lease Investment"
           description="Maximize your property's potential with AP Wireless. We provide upfront lump-sum payments for cell tower lease rights across 23 countries worldwide."
           tag="Industry Leader"
-          tagIcon={Tower}
+          tagIcon={TrendingUp}
           buttons={[
             { text: "Get Your Quote", href: "contact" },
             { text: "Learn More", href: "about" }
           ]}
           imageSrc="https://images.pexels.com/photos/17324301/pexels-photo-17324301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Cell phone tower communication infrastructure"
+          imageAlt="View of a tall telecom tower set against a clear blue sky in Depok, Indonesia."
         />
       </div>
 
@@ -234,7 +234,7 @@ export default function Page() {
           }}
           buttonText="Request Evaluation"
           imageSrc="https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Business consultation meeting"
+          imageAlt="Close-up of a handshake between two professionals in a modern office setting, emphasizing partnership and agreement."
         />
       </div>
     </ThemeProvider>
